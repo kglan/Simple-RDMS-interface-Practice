@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <head>
+
+        <title> Patient Management</title>
+        <style>
+            table,th,td {
+                border: 2px solid black;
+            }
+            h1{text-align: center}
+        </style>
+    </head>
+
+    <body style = "background-color: bisque;">
+        <h1> Patient Management</h1>
+        <br></br>
+
+
+        <h2> New Patient Registration form</h2>
+        <form action="/register">
+            <fieldset>
+                <legend>Patient details</legend>
+                    <label for="firstname"> First name </label>
+                    <input type="text" id="firstname">
+                <br><br>
+                    <label for="lastname">Last name :</label>
+                    <input type="text" id="lastname" name="lastname">
+                <br><br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                <br></br>
+                    <label for="address">Address</label>
+                    <input type = "address" id="address" name="address">
+                <br></br>
+                    <label for="phone"> Phone Number</label>
+                    <input type = "text" id="phone" name="phone">
+                <br></br>
+                    <label for=" DOB"> Date of Birth</label>
+                    <input type = "date" id="date" name="date">
+                <br></br>
+                    <label for="Occupation"> Occupation</label>
+                    <input type = "text" id="occupation">
+                <br><br>
+
+                    <input type="submit" value="Submit">
+            </fieldset>
+
+
+            <br></br>
+
+
+
+            <fieldset>
+                <legend>Patient Search</legend>
+                    <label for="patientid">Patient ID</label>
+                    <input type = "text" id="patientid" name="patientid">
+                    <input type = "submit" value="Submit">
+            </fieldset>
+        
+            <br></br>
+
+
+            <fieldset>
+                <legend>Availability</legend>
+                    <label for="doctor">Physician ID</label>
+                    <input type = "text" id="patientid" name="patientid">
+                    <input type = "submit" value="Submit">
+            </fieldset>
+        
+            <br></br>
+
+
+
+            <fieldset>
+                <div class="col-sm-5">
+                    <div class="form-data">
+                        <div class="form-head">
+                            <h2>Book Appointemnt</h2>
+                        </div>
+                        <div class="form-body">
+                            <div class="row form-row">
+                            <input type="text" placeholder="Enter Full name" class="form-control">
+                            </div>
+                            <div class="row form-row">
+                            <input type="text" placeholder="Enter Mobile Number" class="form-control">
+                            </div>
+                            <div class="row form-row">
+                            <input type="text" placeholder="Enter Email Adreess" class="form-control">
+                            </div>
+                        <div class="row form-row">
+                            <input id="dat" type="date" placeholder="Appointment Date" class="form-control">
+                            </div>
+                            
+                            <h6>Address Details</h6>
+
+                            <div class="row form-row">
+                                <div class="col-sm-6">
+                                <input type="text" placeholder="Enter Area" class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                <input type="text" placeholder="Enter City" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col-sm-6">
+                                <input type="text" placeholder="Enter State" class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                <input type="text" placeholder="Postal Code" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row form-row">
+                            <button class="btn btn-success btn-appointment">
+                                Book Appointment
+                            </button>
+                            
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+
+    </body>
